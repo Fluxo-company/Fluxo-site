@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo | Ideas. Play. Flow.</title>
+    <meta name="description" content="Fluxo.company: The central hub for HookFlow AI and the Fluxo Arcade.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lexend:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --midnight: #0F172A;
+            --violet: #8B5CF6;
+            --coral: #F43F5E;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--midnight);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* LOGO SPACE */
+        .logo-container {
+            margin-top: 50px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed rgba(255,255,255,0.2); /* Placeholder border */
+            border-radius: 20px;
+        }
+        
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 3.5rem;
+            margin: 10px 0;
+            background: linear-gradient(to right, var(--violet), var(--coral));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #94A3B8;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        /* PRODUCT CARDS */
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            width: 350px;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card h2 { margin-top: 0; font-family: 'Lexend', sans-serif; }
+        .card p { color: #CBD5E1; line-height: 1.6; font-size: 0.95rem; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: opacity 0.3s;
+        }
+
+        .btn-pro { background: var(--violet); }
+        .btn-play { background: var(--coral); }
+        .btn:hover { opacity: 0.8; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #475569;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="Fluxo Logo">
+    </div>
+
+    <section class="hero">
+        <h1>Fluxo</h1>
+        <div class="tagline">Ideas. Play. Flow.</div>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <h2 style="color: var(--violet);">HookFlow AI</h2>
+            <p>Viral Content, Automated. Generate high-converting social hooks in seconds using our proprietary AI engine.</p>
+            <a href="#" class="btn btn-pro">Launch HookFlow</a>
+        </div>
+
+        <div class="card">
+            <h2 style="color: var(--coral);">Fluxo Arcade</h2>
+            <p>Enter the Playground. A curated collection of eclectic games designed for the modern mind.</p>
+            <a href="#" class="btn btn-play">Start Playing</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Fluxo.company | Powered by Fluxo Multi-Platform Infrastructure
+    </footer>
+
+</body>
+</html>
+
+Step 2: How to Upload to GitHub
+ * Create Repository: Go to GitHub and create a new public repository named fluxo-site.
+ * Upload File: Click "Add file" -> "Upload files" and drag your index.html (and your logo.png if you have it) into the window.
+ * Commit: Click "Commit changes."
+ * Activate Pages:
+   * Go to Settings > Pages.
+   * Under "Build and deployment", set the source to Deploy from a branch.
+   * Select main branch and /(root) folder. Click Save.
+ * Custom Domain:
+   * On the same "Pages" screen, scroll down to Custom domain.
+   * Type fluxo.company and click Save.
+Step 3: Pointing Hostinger to GitHub
+In your Hostinger DNS Zone Editor, you must add these 4 A Records to make the domain work:
+ * 185.199.108.153
+ * 185.199.109.153
+ * 185.199.110.153
+ * 185.199.111.153
